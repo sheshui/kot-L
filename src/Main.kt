@@ -42,8 +42,13 @@ fun main() {
 //    }
 
 //    if (-1 !in 1..list.lastIndex) println(list)
-    println(list.indices)
-    if (-1 !in list.indices) println(list)
+//    println(list.indices)
+//    if (-1 !in list.indices) println(list)
+//    if (1 in list) println(list)
+
+    for (x in 10 downTo 0 step 3) {
+        println(x)
+    }
 
 
 }
