@@ -46,9 +46,14 @@ fun main() {
 //    if (-1 !in list.indices) println(list)
 //    if (1 in list) println(list)
 
-    for (x in 10 downTo 0 step 3) {
-        println(x)
-    }
+//    for (x in 10 downTo 0 step 3) {
+//        println(x)
+//    }
+    println(list)
+    var changeList = list.filter { it % 2 == 0 }.map { it - 1 }
+    println(changeList)
+    changeList = changeList.flatMap { listOf(it * 4) }
+    println(changeList)
 
 
 }
@@ -67,7 +72,7 @@ fun tWhen(obj: Any) =
 fun sum(a: Int, b: Int) = a + b
 
 
-var list = listOf(1, 2, 3, 4, 5)
+var list = (1..10).toList()
 
 
 fun getStringLength(str: Any) = if (str is String) str.length else null
